@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[YOUR NAME] | First-Year Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of [YOUR NAME], a first-year computer science student exploring C, Python, and programming fundamentals." />
+  
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="nav-logo" aria-label="Home page">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-text">[YOUR NAME]</span>
+        <span class="logo-symbol">/&gt;</span>
+        <span class="badge-student">1st Year</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#learning" class="nav-link">Learning</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link">Journey</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Theme Toggle Button (Mobile & Desktop) -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch between dark and light mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal-fade">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>First-Year Computer Science Student</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">[YOUR NAME]</span> <span class="wave-emoji">👋</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            First-Year Student • C &amp; Python Learner • Curious Mind
+          </p>
+
+          <p class="hero-description">
+            I'm a first-year student currently exploring programming through C and Python. 
+            I'm at the beginning of my journey, learning the fundamentals, solving problems 
+            and discovering what I can create with code.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#journey" class="btn btn-primary">
+              <span>Explore My Journey</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-banner">
+            <div class="stat-pill">
+              <span class="pill-dot green"></span>
+              <span>Currently practicing: <strong>C &amp; Python</strong></span>
+            </div>
+            <div class="stat-pill">
+              <span class="pill-dot blue"></span>
+              <span>Focus: <strong>Logic &amp; Problem Solving</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Visual: Realistic Beginner Code Card -->
+        <div class="hero-visual reveal-fade">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-tabs">
+                <button class="tab-btn active" id="tab-c" data-lang="c">main.c</button>
+                <button class="tab-btn" id="tab-py" data-lang="python">journey.py</button>
+              </div>
+              <div class="terminal-badge">Beginner Snippet</div>
+            </div>
+
+            <div class="terminal-body">
+              <!-- C Snippet Display -->
+              <pre class="code-display active" id="code-c"><code><span class="token-comment">// Starting with foundational C programming</span>
+<span class="token-keyword">#include</span> <span class="token-string">&lt;stdio.h&gt;</span>
+
+<span class="token-keyword">int</span> <span class="token-function">main</span>() {
+    <span class="token-keyword">char</span> status[] = <span class="token-string">"First-Year Student"</span>;
+    
+    <span class="token-function">printf</span>(<span class="token-string">"Hello, World! 👋\n"</span>);
+    <span class="token-function">printf</span>(<span class="token-string">"Currently exploring C &amp; Python.\n"</span>);
+    <span class="token-function">printf</span>(<span class="token-string">"Every expert was once a beginner.\n"</span>);
+    
+    <span class="token-keyword">return</span> <span class="token-number">0</span>;
+}</code></pre>
+
+              <!-- Python Snippet Display -->
+              <pre class="code-display" id="code-py"><code><span class="token-comment"># My programming journey starts here</span>
+student = {
+    <span class="token-string">"year"</span>: <span class="token-string">"1st Year"</span>,
+    <span class="token-string">"learning"</span>: [<span class="token-string">"C"</span>, <span class="token-string">"Python"</span>],
+    <span class="token-string">"focus"</span>: <span class="token-string">"Core problem solving"</span>,
+    <span class="token-string">"status"</span>: <span class="token-string">"Learning everyday 🚀"</span>
+}
+
+<span class="token-keyword">for</span> tech <span class="token-keyword">in</span> student[<span class="token-string">"learning"</span>]:
+    <span class="token-function">print</span>(f<span class="token-string">"Exploring fundamentals of {tech}..."</span>)</code></pre>
+            </div>
+
+            <!-- Terminal Interactive Console Preview -->
+            <div class="terminal-footer">
+              <div class="terminal-action-row">
+                <button class="run-code-btn" id="run-code-btn" aria-label="Simulate code run">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Simulate Output</span>
+                </button>
+                <span class="terminal-status" id="terminal-status">Ready</span>
+              </div>
+              <div class="console-output" id="console-output">
+                <span class="console-line text-muted">&gt; Click "Simulate Output" to run this program...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Honest Student Story -->
+          <div class="about-text-card glass-card reveal-fade">
+            <h3 class="card-title">Curiosity, Code &amp; Continuous Learning</h3>
+            <p>
+              I am currently in my <strong>first year of college</strong>, taking my first steps into the 
+              world of computer science. Right now, I'm dedicating my time to learning <strong>C and Python</strong>, 
+              focusing deeply on understanding the core fundamentals of programming rather than rushing into complex frameworks.
+            </p>
+            <p>
+              I genuinely enjoy breaking down problems, figuring out how logic functions behind the scenes, and seeing 
+              a piece of code run cleanly without compiler errors. As a curious learner, I believe that building a strong, 
+              honest foundation in algorithms and logic today is the key to creating meaningful software tomorrow.
+            </p>
+            <p>
+              I believe in <strong>learning by doing</strong> — experimenting with code, learning from mistakes, 
+              and constantly staying curious. While I look forward to exploring more technologies, web development, 
+              and deeper software engineering concepts in the future, right now I'm proud to be an enthusiastic beginner enjoying the learning curve.
+            </p>
+
+            <div class="about-philosophy">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="quote-icon" aria-hidden="true">
+                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+              </svg>
+              <span>"Every great developer once sat in front of their screen trying to figure out why their first program wasn't compiling."</span>
+            </div>
+          </div>
+
+          <!-- Right Column: "Right Now" Status Card -->
+          <div class="about-status-card glass-card reveal-fade">
+            <div class="status-header">
+              <div class="status-title-group">
+                <span class="live-indicator"></span>
+                <h3 class="card-title">Right Now</h3>
+              </div>
+              <span class="student-pill">Current Focus</span>
+            </div>
+            
+            <p class="status-subtitle">
+              A transparent snapshot of where I am spending my time as a 1st-year student:
+            </p>
+
+            <ul class="focus-list">
+              <li class="focus-item">
+                <div class="focus-icon-wrap c-color">
+                  <span>C</span>
+                </div>
+                <div class="focus-info">
+                  <span class="focus-label">Learning</span>
+                  <span class="focus-name">C Programming</span>
+                  <span class="focus-desc">Control flow, loops, functions, memory basics &amp; arrays</span>
+                </div>
+              </li>
+
+              <li class="focus-item">
+                <div class="focus-icon-wrap py-color">
+                  <span>Py</span>
+                </div>
+                <div class="focus-info">
+                  <span class="focus-label">Learning</span>
+                  <span class="focus-name">Python</span>
+                  <span class="focus-desc">Syntax simplicity, lists, dictionaries &amp; scripts</span>
+                </div>
+              </li>
+
+              <li class="focus-item">
+                <div class="focus-icon-wrap logic-color">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </div>
+                <div class="focus-info">
+                  <span class="focus-label">Improving</span>
+                  <span class="focus-name">Problem Solving</span>
+                  <span class="focus-desc">Breaking down word problems into logical algorithmic steps</span>
+                </div>
+              </li>
+
+              <li class="focus-item">
+                <div class="focus-icon-wrap cs-color">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="focus-info">
+                  <span class="focus-label">Exploring</span>
+                  <span class="focus-name">Computer Science</span>
+                  <span class="focus-desc">How hardware, operating systems, and programs interact</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LEARNING SECTION ==================== -->
+    <section class="learning section" id="learning">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Current Subjects</span>
+          <h2 class="section-title">What I'm Learning</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Honest reflections on the subjects and skills I am actively building during my first year.
+          </p>
+        </div>
+
+        <div class="learning-grid">
+          <!-- Card 1: C Programming -->
+          <div class="learning-card glass-card reveal-fade">
+            <div class="card-top">
+              <div class="learning-icon c-badge">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="learning-status-tag active-tag">In Progress</span>
+            </div>
+
+            <h3 class="learning-title">C Programming</h3>
+            <p class="learning-text">
+              Learning programming fundamentals, logic, variables, loops, functions, arrays and problem solving.
+            </p>
+
+            <div class="topics-tags">
+              <span class="tag">Syntax &amp; Data Types</span>
+              <span class="tag">Loops &amp; Conditionals</span>
+              <span class="tag">Functions</span>
+              <span class="tag">Arrays</span>
+              <span class="tag">Logic Building</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Python -->
+          <div class="learning-card glass-card reveal-fade">
+            <div class="card-top">
+              <div class="learning-icon py-badge">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <span class="learning-status-tag active-tag">In Progress</span>
+            </div>
+
+            <h3 class="learning-title">Python</h3>
+            <p class="learning-text">
+              Exploring Python fundamentals and learning how to approach problems using code.
+            </p>
+
+            <div class="topics-tags">
+              <span class="tag">Python Fundamentals</span>
+              <span class="tag">Control Flow</span>
+              <span class="tag">Data Collections</span>
+              <span class="tag">Writing Clean Scripts</span>
+              <span class="tag">Algorithmic Thinking</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Problem Solving -->
+          <div class="learning-card glass-card reveal-fade">
+            <div class="card-top">
+              <div class="learning-icon solve-badge">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <span class="learning-status-tag practice-tag">Continuous Habit</span>
+            </div>
+
+            <h3 class="learning-title">Problem Solving</h3>
+            <p class="learning-text">
+              Practicing logical thinking and breaking problems into smaller steps.
+            </p>
+
+            <div class="topics-tags">
+              <span class="tag">Step-by-step Analysis</span>
+              <span class="tag">Dry Running Code</span>
+              <span class="tag">Edge Cases</span>
+              <span class="tag">Debugging Logic</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Creativity -->
+          <div class="learning-card glass-card reveal-fade">
+            <div class="card-top">
+              <div class="learning-icon creative-badge">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path>
+                  <line x1="9" y1="21" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <span class="learning-status-tag mindset-tag">Mindset</span>
+            </div>
+
+            <h3 class="learning-title">Creativity</h3>
+            <p class="learning-text">
+              Trying to approach learning and problems from different perspectives.
+            </p>
+
+            <div class="topics-tags">
+              <span class="tag">Experimentation</span>
+              <span class="tag">Different Perspectives</span>
+              <span class="tag">Curious Inquiry</span>
+              <span class="tag">Visualizing Logic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS / STRENGTHS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Core Attributes</span>
+          <h2 class="section-title">My Strengths</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Authentic soft skills, learning traits, and mindsets that drive my daily growth. No fake percentages or buzzwords.
+          </p>
+        </div>
+
+        <div class="strengths-grid">
+          <!-- Strength 1: Creativity -->
+          <div class="strength-card glass-card reveal-fade">
+            <div class="strength-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="strength-name">Creativity</h3>
+            <p class="strength-desc">
+              Approaching exercises with imagination and thinking of multiple different angles to solve the same question.
+            </p>
+          </div>
+
+          <!-- Strength 2: Problem Solving -->
+          <div class="strength-card glass-card reveal-fade">
+            <div class="strength-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="strength-name">Problem Solving</h3>
+            <p class="strength-desc">
+              Enjoying the challenge of breaking complex puzzles down into bite-sized, manageable, logical steps.
+            </p>
+          </div>
+
+          <!-- Strength 3: Curiosity -->
+          <div class="strength-card glass-card reveal-fade">
+            <div class="strength-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="strength-name">Curiosity</h3>
+            <p class="strength-desc">
+              Asking questions about why code works the way it does and how computers interpret instructions behind the scenes.
+            </p>
+          </div>
+
+          <!-- Strength 4: Learning Mindset -->
+          <div class="strength-card glass-card reveal-fade">
+            <div class="strength-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3 class="strength-name">Learning Mindset</h3>
+            <p class="strength-desc">
+              Treating bugs, compiler errors, and incorrect logic as natural learning opportunities rather than roadblocks.
+            </p>
+          </div>
+
+          <!-- Strength 5: Consistency -->
+          <div class="strength-card glass-card reveal-fade">
+            <div class="strength-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="strength-name">Consistency</h3>
+            <p class="strength-desc">
+              Showing up regularly to write code, review concepts, and build a steady habit of study and experimentation.
+            </p>
+          </div>
+
+          <!-- Strength 6: Logical Thinking -->
+          <div class="strength-card glass-card reveal-fade">
+            <div class="strength-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3 class="strength-name">Logical Thinking</h3>
+            <p class="strength-desc">
+              Structuring thought processes sequentially so that programs behave predictably and clearly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LEARNING JOURNEY TIMELINE ==================== -->
+    <section class="journey section" id="journey">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">My Learning Journey</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            A realistic look at my progress so far, and the honest roadmap of where I'm heading next.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Milestone 01 -->
+          <div class="timeline-item reveal-fade">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <span class="timeline-number">01</span>
+                <span class="timeline-badge badge-college">Milestone</span>
+              </div>
+              <h3 class="timeline-title">Started College</h3>
+              <p class="timeline-desc">
+                Beginning my first year and building a foundation in computer science.
+              </p>
+              <div class="timeline-status">
+                <span class="status-bullet completed"></span>
+                <span>Active 1st-Year College Journey</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 02 -->
+          <div class="timeline-item reveal-fade">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <span class="timeline-number">02</span>
+                <span class="timeline-badge badge-c">Milestone</span>
+              </div>
+              <h3 class="timeline-title">Started C Programming</h3>
+              <p class="timeline-desc">
+                Learning the fundamentals of programming and logical thinking.
+              </p>
+              <div class="timeline-status">
+                <span class="status-bullet in-progress"></span>
+                <span>Actively Practicing &amp; Experimenting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 03 -->
+          <div class="timeline-item reveal-fade">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <span class="timeline-number">03</span>
+                <span class="timeline-badge badge-py">Milestone</span>
+              </div>
+              <h3 class="timeline-title">Started Python</h3>
+              <p class="timeline-desc">
+                Exploring Python and understanding how programming concepts translate into code.
+              </p>
+              <div class="timeline-status">
+                <span class="status-bullet in-progress"></span>
+                <span>Actively Exploring Syntax &amp; Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 04: Future Learning -->
+          <div class="timeline-item future-item reveal-fade">
+            <div class="timeline-dot future-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card glass-card future-card">
+              <div class="timeline-header">
+                <span class="timeline-number future-num">04</span>
+                <span class="timeline-badge badge-future">Future Learning</span>
+              </div>
+              <h3 class="timeline-title">What's Next?</h3>
+              <p class="timeline-desc">
+                Planning to explore Java, web development and more technologies as my fundamentals become stronger.
+              </p>
+              <div class="timeline-status">
+                <span class="status-bullet future-bullet"></span>
+                <span>Future Goal (Not Current Expertise)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION (COMING SOON) ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Work in Progress</span>
+          <h2 class="section-title">Projects — Coming Soon 🚀</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Honest Empty-State Banner -->
+        <div class="empty-state-banner glass-card reveal-fade">
+          <div class="empty-state-visual">
+            <div class="gear-spinner" aria-hidden="true">
+              <div class="pulse-ring"></div>
+              <div class="code-bracket-icon">&lt;/&gt;</div>
+            </div>
+            <div class="building-indicator">
+              <span class="ping-circle"></span>
+              <span>Building Foundations First</span>
+            </div>
+          </div>
+
+          <div class="empty-state-text">
+            <h3 class="empty-state-heading">Focusing on Strong Fundamentals First</h3>
+            <p class="empty-state-quote">
+              "I haven't built my first major project yet — and that's okay. Right now, I'm focusing on strengthening my programming fundamentals. My goal is to start turning what I learn into real projects soon."
+            </p>
+            <p class="empty-state-sub">
+              Below are three planned beginner projects I intend to build as I complete my introductory coursework:
+            </p>
+          </div>
+        </div>
+
+        <!-- Planned Project Blueprints -->
+        <div class="projects-grid">
+          <!-- Planned Project 01 -->
+          <div class="project-card glass-card reveal-fade">
+            <div class="project-header">
+              <span class="project-number">01</span>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+            <h3 class="project-title">First C Project</h3>
+            <p class="project-desc">
+              A console-based terminal application (e.g. Student Record Manager or Number Guessing Logic Game) designed to practice C loops, structures, arrays, and file pointers.
+            </p>
+            <div class="project-meta">
+              <span class="meta-tag">C Language</span>
+              <span class="meta-tag">Terminal I/O</span>
+              <span class="meta-tag">Logic Structures</span>
+            </div>
+            <div class="project-status-bar">
+              <div class="status-indicator">
+                <span class="status-text">Status: <strong>Planning &amp; Concept Phase</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Planned Project 02 -->
+          <div class="project-card glass-card reveal-fade">
+            <div class="project-header">
+              <span class="project-number">02</span>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+            <h3 class="project-title">First Python Project</h3>
+            <p class="project-desc">
+              A command-line problem-solving tool or simple text analyzer designed to practice Python collections, string manipulation, and clean script writing.
+            </p>
+            <div class="project-meta">
+              <span class="meta-tag">Python 3</span>
+              <span class="meta-tag">Algorithms</span>
+              <span class="meta-tag">CLI Script</span>
+            </div>
+            <div class="project-status-bar">
+              <div class="status-indicator">
+                <span class="status-text">Status: <strong>Planning &amp; Concept Phase</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Planned Project 03 -->
+          <div class="project-card glass-card reveal-fade">
+            <div class="project-header">
+              <span class="project-number">03</span>
+              <span class="coming-soon-badge active-practice">In Progress</span>
+            </div>
+            <h3 class="project-title">First Personal Web Project</h3>
+            <p class="project-desc">
+              This portfolio itself! Built as a hands-on practice project to explore HTML structure, CSS layout styling, and vanilla JavaScript interactions.
+            </p>
+            <div class="project-meta">
+              <span class="meta-tag">HTML5</span>
+              <span class="meta-tag">CSS3</span>
+              <span class="meta-tag">Vanilla JS</span>
+            </div>
+            <div class="project-status-bar">
+              <div class="status-indicator">
+                <span class="status-text">Status: <strong>Current Practice Project</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">My current college enrollment and academic journey.</p>
+        </div>
+
+        <div class="education-card-wrapper reveal-fade">
+          <div class="education-card glass-card">
+            <div class="education-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+
+            <div class="education-details">
+              <div class="edu-top">
+                <h3 class="edu-college">[COLLEGE NAME]</h3>
+                <span class="edu-duration">2026 – Present</span>
+              </div>
+
+              <div class="edu-degree-row">
+                <span class="edu-degree">[DEGREE / COURSE]</span>
+                <span class="edu-badge">First Year</span>
+              </div>
+
+              <p class="edu-location">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>[CITY]</span>
+              </p>
+
+              <div class="edu-notes">
+                <span class="notes-title">Current 1st-Year Foundations:</span>
+                <p>Introduction to Programming, Problem Solving, Computer Science Concepts, Mathematics for Computing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Say Hello</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            I'm always open to learning, connecting with other students and discovering new ideas.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Links -->
+          <div class="contact-info-card glass-card reveal-fade">
+            <h3 class="card-title">Get in Touch</h3>
+            <p class="contact-desc">
+              Whether you're a fellow student wanting to discuss coding exercises, share learning resources, or say hello, feel free to reach out!
+            </p>
+
+            <div class="contact-items">
+              <!-- Email Item -->
+              <a href="mailto:[YOUR EMAIL]" class="contact-item">
+                <div class="contact-icon email-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="item-label">Email</span>
+                  <span class="item-value">[YOUR EMAIL]</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Item -->
+              <a href="https://linkedin.com/in/[YOUR LINKEDIN]" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon linkedin-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="item-label">LinkedIn</span>
+                  <span class="item-value">[YOUR LINKEDIN]</span>
+                </div>
+              </a>
+
+              <!-- GitHub Item -->
+              <a href="https://github.com/[YOUR GITHUB]" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon github-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="item-label">GitHub</span>
+                  <span class="item-value">[YOUR GITHUB]</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="student-note">
+              <span>💡 Always happy to exchange notes or practice problem sets together!</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Practice Form -->
+          <div class="contact-form-card glass-card reveal-fade">
+            <h3 class="card-title">Send a Message</h3>
+            <p class="form-disclaimer">
+              Fill out this form to test out my frontend validation logic. (No backend connected yet)
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Alex Smith" required />
+                <span class="error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. alex@example.com" required />
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Hi! Saw your 1st-year portfolio..." required></textarea>
+                <span class="error-msg" id="message-error">Please write a brief message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Honest Static Notice / Feedback Box -->
+            <div id="form-alert" class="form-alert" role="alert" style="display: none;">
+              <span class="alert-icon">✨</span>
+              <div class="alert-text">
+                <strong>Thank you for testing the form!</strong>
+                <p>Since this is a static student practice portfolio, messages aren't stored in a database, but you can always reach out directly at <strong>[YOUR EMAIL]</strong>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">
+          <span class="logo-symbol">&lt;</span>
+          <span class="logo-text">[YOUR NAME]</span>
+          <span class="logo-symbol">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Learning. Building. Growing. 🚀</p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 [YOUR NAME]. First-Year Student Portfolio.</p>
+        <p class="footer-subtext">Crafted with HTML, CSS, and Vanilla JavaScript as a learning practice project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
